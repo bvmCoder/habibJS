@@ -1,0 +1,13 @@
+body {
+	font-size: 16px;
+}
+h1 {
+	font-size: 2em;
+	color: #FF7788;
+}
+
+p.paraOne {
+	border: 1px solid #292929;
+	padding: 10px 5px;
+	background: #E4E4E4;
+}
