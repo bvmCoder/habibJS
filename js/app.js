@@ -1,25 +1,25 @@
 (function() {
     console.log('My Project has been loaded!');
 
-    function moveOn() {
+    var moveOn = function moveOn() {
         var answer = confirm('Sure Ready to Move on!');
         console.log(answer);
         if (!answer) {
             window.location = 'http://ebay.com';
         }
-    }
+    };
 
-    function _id(id) {
+    var _id = function _id(id) {
         return document.getElementById(id);
-    }
+    };
 
-    function _class(cls) {
+    var _class = function _class(cls) {
         return document.getElementsByClassName(cls);
-    }
+    };
 
-    function _quSeAll(x) {
+    var _quSeAll = function _quSeAll(x) {
         return document.querySelectorAll(x);
-    }
+    };
 
     var headingOne = _id('headingOne');
     console.log(headingOne);
@@ -29,6 +29,7 @@
         divTwo = _quSeAll('.divTwo');
     console.log(heading); // heading is an array
     console.log(heading.length);
+    
     for (var i = 0; i < heading.length; i++) {
         heading[i].style.color = '#FF983A';
     }
