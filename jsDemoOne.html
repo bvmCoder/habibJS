@@ -98,7 +98,7 @@
 
         var fiDo = dogMaker('Fido');
         var spot = dogMaker('Spat');
-    */
+    
 
     function Dog(dogName) {
     	//console.log(this);
@@ -113,6 +113,38 @@
     var bittu = new Dog('Bittu');
     raju.bark();
     bittu.bark();
+
+    */
+
+
+    var doggy = {
+        name: 'Jake',
+        bark: function bark(vol) {
+            barkMsg = 'Woof Woof';
+            var printLine = (vol > 5) ? (this.name + ' says ' + barkMsg.toUpperCase()) : (this.name + ' says ' + barkMsg);
+
+            console.log(printLine);
+        }
+    };
+
+
+    var kitty = {
+        name: 'Simmy',
+        meow: function meow(vol) {
+            var printLine = (this.name + ' says Meow....');
+            console.log(printLine);
+        }
+    };
+
+    doggy.bark(15);
+
+    kitty.meow();
+    kitty.meow.call(doggy);
+    doggy.bark.call(kitty, 15);
+
+    doggy.bark.apply(kitty, [15, true, 'Hi']);
+
+    
     </script>
 </body>
 
