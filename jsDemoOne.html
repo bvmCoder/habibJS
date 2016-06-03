@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id='header'>I am a Header</h1>
+    <script type="text/javascript">
+    function _id(name) {
+        return document.getElementById(name);
+    }
+    var elem = _id('header');
+
+    function setCSS(color, textTransform) {
+        elem.style.color = color;
+        elem.style.textTransform = textTransform;
+    }
+
+    setCSS('#FF3377', 'uppercase');
+
+
+    function setCSS(obj) {
+        elem.style.color = obj.color;
+        elem.style.textTransform = obj.textTransform;
+    }
+
+    setCSS({
+        'color': '#FF3377',
+        'textTransform': 'uppercase'
+    })
+
+    function sum(num1, num2) {
+        return (num1 + num2);
+    }
+
+    function sum(num1, num2) {
+        return (num1 + num2);
+    }
+
+    console.log(sum(2, 3)); // 5
+    console.log(sum(15, 25)); // 40
+    console.log(sum(15, 25, 15, 60, 2, 5)); //
+    </script>
+</body>
+
+</html>
