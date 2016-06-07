@@ -12,6 +12,8 @@
     <hr>
     <br>
     <h2 id="headingTwo" onclick="console.log('You have clicked number 2', this);">Heading Two</h2>
+
+
     <script type="text/javascript">
     function _id(name) {
         return document.getElementById(name);
@@ -143,6 +145,16 @@
     doggy.bark.call(kitty, 15);
 
     doggy.bark.apply(kitty, [15, true, 'Hi']);
+
+
+    function argsToArray() {
+        //var args = Array.prototype.slice.call(arguments);
+        //var args = (new Array()).slice.call(arguments);
+        var args = [].slice.call(arguments);
+        console.log(args);
+    }
+
+    argsToArray('foo', 'bar', 'HangBar', 'Notice', 'Amit', 'Afzal', 'Andy');
 
     
     </script>
