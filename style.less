@@ -1,0 +1,179 @@
+.patternGroup {
+    margin-bottom: 50px;
+    
+    .patternGroupTitle {
+            border-bottom: 1px solid #0dbf48;
+            display: block;
+            color: #13bf38;
+            font-size: 24px;
+            font-weight: 600;
+            padding: 5px;
+            padding-right: 0;
+            padding-left: 10px;
+            position: fixed;
+            left: 200px;
+            right: 15px;
+            z-index: 100;
+            padding-top: 10px;
+            background-color: white;
+            background-image: -webkit-linear-gradient(left, #000, #13bf38);
+            background-image: -o-linear-gradient(left, #000, #13bf38);
+            background-image: linear-gradient(to right, #000, #13bf38); // Safari 5.1-6, Chrome 10+
+            // Opera 12
+            // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+            background-repeat: repeat-x;
+            filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",argb(#000),argb(#13bf38))); // IE9 and down        
+        }
+    
+    .patternGroupContent { 
+        position: absolute;
+        top: 50px;
+        right: 150px;
+        left: 30px;        
+    }
+
+    .patternGroupNav {
+        position: fixed;
+        right: 15px;
+        width: 140px;
+        overflow-y: auto;
+        bottom: 0;
+        top: 90px;
+        margin-top: 15px;
+        background-color: #000;
+        z-index: 200;
+
+        .patternGroupNavPropsLink {
+            a {
+                color: #eb272e;
+                text-decoration: none;
+                display: block;
+                padding: 10px;
+            }
+        }
+
+        div {
+            border-bottom: 1px solid #003300;
+            a {
+                color: #b5b5b5;
+                text-decoration: none;
+                display: block;
+                padding: 10px;
+            }
+            
+            &:hover {
+                background-color: #1f1f1f;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.pattern {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.example {
+    font-family: 'Courier', 'Courier';
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+}
+
+.canvas {
+    border: 1px solid;
+    padding: 20px;
+    border-color: #C8C8C8;
+    .label {
+        color: #999999;
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+.code {
+    border: 1px solid;
+    border-color: #C8C8C8;
+    margin-top: -1px;
+    padding: 20px;
+    font-size: 13px;
+    font-weight: normal;
+    background-color: #F2F2F2;
+    line-height: 1.5;
+}
+
+.props {
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 15px;
+    
+    .propsTitle {
+        font-size: 16px;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 10px;        
+    }    
+    
+    .propsType, .propsRequired, .propsOptional {
+        color: #fff;
+        display: inline;
+        padding: .2em .6em .3em;
+        font-size: 75%;
+        border-radius: .25em;      
+        font-weight: 700;
+        line-height: 1;
+        white-space: nowrap;
+        vertical-align: baseline;
+        text-align: center;          
+    }    
+
+    .propsType {
+        background-color: #777;
+    }
+
+    .propsRequired {
+        background-color: #d9534f;
+    }    
+
+    .propsOptional {
+        background-color: #5bc0de;
+    }    
+
+    
+    table {
+        
+        border-spacing: 0;
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+        
+        tbody > tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+        
+        th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            line-height: 1.42857143;
+            vertical-align: bottom;
+            border-bottom-width: 2px;
+            text-align: left;
+        }
+        
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            vertical-align: top;
+            line-height: 1.42857143;
+        }
+    }
+}
