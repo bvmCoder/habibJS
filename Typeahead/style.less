@@ -1,0 +1,60 @@
+.typeahead {
+    font-weight:normal;
+    position: relative;
+    font-size: 13px;
+    padding:0;
+    margin:0;
+    width:100%;
+     div.input-section {
+           input.input-box {
+           padding:5px;
+           width:100%;
+           box-sizing: border-box;
+           font-weight: 600;
+       }   
+     }
+    div.result-section {
+        position: absolute;
+        z-index: 999999;
+        width: 99.9%;
+        border-left:1px solid #ccc;
+        border-right:1px solid #ccc;
+        border-bottom:1px solid #ccc;
+        background-color: #FFFFFF;
+        div.multiselect-footer{
+            border-top: 1px solid #ccc;
+        }
+        ul.result-set {
+        list-style: none;
+        margin:0;
+        padding:0;
+        overflow: auto;
+        li{
+            list-style: none;
+            padding:5px;
+            margin: 0;
+            span.multiselect-checkbox {
+                padding-right: 3px;
+            }
+        }
+        li:hover {
+            background: #E9E9E9;
+            cursor: pointer;
+            padding:5px;
+            font-weight: 600;
+        }
+        li:focus {
+            background: #E9E9E9;
+            cursor: pointer;
+            padding:5px;
+            font-weight: 600;
+            border:1px solid #E9E9E9;
+        }
+    }     
+  }
+}
+
+.multiselect-add-button{
+    float:right;
+    margin: 7px;
+}
