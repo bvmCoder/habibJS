@@ -1,0 +1,37 @@
+@import "../../baseStyles/baseStyles.less";
+.pager {
+    width: 100%;
+    ul {
+         list-style-type: none;
+         li {
+             float: left;
+             a {
+                 .Body-Primary();
+                 text-align: center;
+                 line-height: 22px;
+                 display: inline-block;
+                 width: 22px;
+                 height: 22px;
+                 margin-right: 13px;
+                 cursor: pointer;
+             }
+         }
+         li:last-child {
+             float: right;
+         }
+    }
+}
+
+.active {
+    background-color: #DFE6EC;
+}
+
+.omit {
+    padding-left: 5px;
+    padding-right: 5px; 
+    margin-left: -13px;
+}
+
+.info {
+    font-family: Body-Secondary;
+}
