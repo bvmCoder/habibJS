@@ -1,0 +1,113 @@
+@import "../../baseStyles/baseStyles.less";
+
+ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+.allItemStrong {
+    font-weight: 700;
+}
+
+.container {
+    background: @white;
+    width: 100%;
+
+    .dropdown {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+
+        .title {
+            //height: 28px;
+            line-height: 28px;
+            border: 1px solid @grey-5;
+            background: #FFFFFF;
+            position: relative;
+            box-sizing:  border-box;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 100%;
+            min-width: 150px;
+            overflow: hidden;
+            display:block;
+            white-space: normal;
+            cursor: pointer;
+        }
+
+        .itemsContainer {
+            margin-top: 2px;
+            max-width: 285px;
+            border: 1px solid @grey-5;
+            position: absolute;
+            z-index: 999;
+            box-shadow: 1px 1px 2px 0px rgba(185,185,185,100);    
+            box-sizing:  border-box;
+            background: @white;
+
+            .itemList {
+                overflow-y: auto;
+                overflow-x: hidden;
+                &::-webkit-scrollbar {
+                    width: 10px;
+                    background: #FEFEFE;
+                    border-left: 1px solid @grey-2;
+
+                }
+                &::-webkit-scrollbar-thumb{
+                    background: @grey-3;
+                    border-radius: 6px;
+                }
+
+                .item {
+                    min-height: 30px;
+                    max-height: 46px;
+                    padding-top: 5.5px;
+                    padding-bottom: 5.5px;
+                    line-height: 17px;
+                    width: inherit;
+                    box-sizing: border-box;
+                    user-select: none;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    width: 100%;
+                    overflow: hidden;
+                    display:block;
+                    white-space: normal;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: @highlight-blue;
+                    }
+                }
+
+                .allItem {
+                    .item;
+                    border-bottom: 1px solid #ABABAB;
+                }
+            }
+
+            .buttonsContainer {
+                border-top: 1px solid #ABABAB;
+
+                .buttons {
+                    float: right;
+                    padding: 15px;
+                }
+            }
+        }
+        .pull_left {
+            float: left;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .pull_right {
+            position: absolute;
+            right:10px;
+        }
+    }
+
+}

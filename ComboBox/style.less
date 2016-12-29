@@ -1,0 +1,49 @@
+@import '../../baseStyles/baseStyles.less';
+
+.filter-dropdown {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+.search-container {
+    div.icon-container {
+        float: right;
+        background: url(../../images/arrow_down.jpg) no-repeat;
+        background-size: 28px 28px; 
+        width:28px;
+        height: 28px;
+        cursor: pointer;
+        border: 1px solid #ABABAB;
+    }
+    div.search-box-container {
+        float: left;
+        .calc(width; "100% - 30px");
+        input[type=text] {
+            outline: none;
+            width: 100%;
+        }
+    }
+}
+.search-container:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.content-visible {
+    display: block;
+    position: absolute;
+    z-index: 999999;
+    background: #fff;
+    border:1px solid #ccc;
+    .calc(min-width; "100% - 2px");
+    width: auto;
+}
+.content-hidden {
+    display: none;
+}
+
