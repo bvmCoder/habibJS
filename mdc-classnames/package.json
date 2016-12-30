@@ -1,70 +1,10 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "mdc-classnames@0.0.4",
-        "scope": null,
-        "escapedName": "mdc-classnames",
-        "name": "mdc-classnames",
-        "rawSpec": "0.0.4",
-        "spec": "0.0.4",
-        "type": "version"
-      },
-      "C:\\workspace\\MA.Content.Frameworks.Neptune"
-    ]
-  ],
-  "_from": "mdc-classnames@0.0.4",
-  "_id": "mdc-classnames@0.0.4",
-  "_inCache": true,
-  "_location": "/mdc-classnames",
-  "_nodeVersion": "6.2.1",
-  "_npmUser": {
-    "name": "sys_szdevops",
-    "email": "hongkun.chen@moodys.com"
-  },
-  "_npmVersion": "3.9.3",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "mdc-classnames@0.0.4",
-    "scope": null,
-    "escapedName": "mdc-classnames",
-    "name": "mdc-classnames",
-    "rawSpec": "0.0.4",
-    "spec": "0.0.4",
-    "type": "version"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "http://apc-lgmdcdvw202:8080/m/mdc-classnames/_attachments/mdc-classnames-0.0.4.tgz",
-  "_shasum": "a6c9c3ecaeff5b323e574d2b750376988e58efc1",
-  "_shrinkwrap": null,
-  "_spec": "mdc-classnames@0.0.4",
-  "_where": "C:\\workspace\\MA.Content.Frameworks.Neptune",
-  "dependencies": {},
-  "description": "A simple utility for conditionally joining classNames together",
-  "devDependencies": {},
-  "directories": {},
-  "dist": {
-    "shasum": "a6c9c3ecaeff5b323e574d2b750376988e58efc1",
-    "tarball": "http://apc-lgmdcdvw202:8080/m/mdc-classnames/_attachments/mdc-classnames-0.0.4.tgz"
-  },
-  "gitHead": "479f705c6a23c0b07271dff0ece6c816d59c81af",
-  "homepage": "http://git.moodys.com/Repository/MA.Content.Libs.ClassNames/master/Tree",
-  "main": "index.js",
-  "maintainers": [
-    {
-      "name": "sys_szdevops",
-      "email": "hongkun.chen@moodys.com"
-    }
-  ],
-  "name": "mdc-classnames",
-  "optionalDependencies": {},
+  "name": "classnames", 
+  "version": "0.0.1", 
+  "description": "A simple utility for conditionally joining classNames together", 
+  "main": "index.js", 
   "publishConfig": {
-    "registry": "http://apc-lgmdcdvw202:8080"
-  },
-  "readme": "ERROR: No README data found!",
-  "scripts": {},
-  "version": "0.0.4"
+    "registry": ""
+  }, 
+  "homepage": ""
 }
