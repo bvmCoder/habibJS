@@ -1,19 +1,14 @@
-/*!
-  Copyright (c) 2016 Jed Watson.
-  Licensed under the MIT License (MIT), see
-  http://jedwatson.github.io/classnames
-*/
 (function() {
     'use strict';
 
     var hasOwn = {}.hasOwnProperty;
 
-    var mdcClassnames = {
+    var ClassNames = {
 
-        setCssModule: function() {
+        setCssModule: function setCssModule() {
             var classes = [];
-
-            for (var i = 0; i < arguments.length; i++) {
+            var length = arguments.length;
+            for (var i = 0; i < length; i++) {
                 var arg = arguments[i];
                 if (!arg) continue;
 
@@ -35,10 +30,11 @@
             return classes.join(' ');
         },
 
-        classSet: function() {
+        classSet: function classSet() {
             var classes = [];
+            var length = arguments.length;
 
-            for (var i = 0; i < arguments.length; i++) {
+            for (var i = 0; i < length; i++) {
                 var arg = arguments[i];
                 if (!arg) continue;
 
@@ -62,14 +58,14 @@
     };
 
     if (typeof module !== 'undefined' && module.exports) {
-		module.exports = mdcClassnames;
+		module.exports = ClassNames;
 	} else if (typeof define === 'function' && typeof define.amd === 'object' && define.amd) {
-		// register as 'mdcClassnames', consistent with npm package name
-		define('mdcClassnames', [], function () {
-			return mdcClassnames;
+		// register as 'ClassNames', consistent with npm package name
+		define('ClassNames', [], function () {
+			return ClassNames;
 		});
 	} else {
-		window.mdcClassnames = mdcClassnames;
+		window.ClassNames = ClassNames;
 	}    
 
 }());
