@@ -1,0 +1,24 @@
+I m working @ Moodys right now
+Moodys has three div MIT (U work right now) 
+	MA(Content) 
+	and MIS (Moods Invester Service for Ratings)
+
+Currently I am working on react
+Working on making reusable components in react
+with SASS and Nodejs
+
+checkbox,
+drawer
+Heading
+button
+textbox
+dropdown
+toggle button
+Accoridan
+Modal
+Tabs
+Slider
+Spinner
+
+After finishing the components library we have started working on making pages in the current CS2 (Capital Structure Site which is a rewrite of the current Moddys.com)
+
